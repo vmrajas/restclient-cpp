@@ -49,11 +49,13 @@ RestClient::response.headers // HTTP response headers
 There are some packages available for Linux on [packagecloud][packagecloud].
 Otherwise you can do the regular autotools dance:
 
-```
+{% highlight bash %}
+
 ./autogen.sh
 ./configure
 make install
-```
+
+{% endhighlight %}
 
 ## Development
 - [Issues][]

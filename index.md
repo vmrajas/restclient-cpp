@@ -45,6 +45,15 @@ RestClient::response.headers // HTTP response headers
 - [libcurl][]
 - [gtest][] for development
 
+## Installation
+There are some packages available for Linux on [packagecloud][packagecloud].
+Otherwise you can do the regular autotools dance:
+
+```
+./autogen.sh
+./configure
+make install
+```
 
 ## Development
 - [Issues][]
@@ -64,3 +73,4 @@ RestClient::response.headers // HTTP response headers
 [gtest]: http://code.google.com/p/googletest/
 [Issues]: https://github.com/mrtazz/restclient-cpp/issues
 [Tracker]: https://www.pivotaltracker.com/projects/255177/stories
+[packagecloud]: https://packagecloud.io/mrtazz/restclient-cpp

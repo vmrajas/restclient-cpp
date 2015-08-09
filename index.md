@@ -57,22 +57,8 @@ make install
 
 {% endhighlight %}
 
-## Development
-- [Issues][]
-- [Tracker][]
-
-## Contribute
-- Fork the project.
-- Make your feature addition or bug fix.
-- Add tests for it. This is important so I don't break it in a future version
-  unintentionally.
-- Commit, do not mess with version
-- Send me a pull request. Bonus points for topic branches.
-
 
 [libcurl]: http://curl.haxx.se/libcurl/
 [ruby rest-client]: http://github.com/archiloque/rest-client
 [gtest]: http://code.google.com/p/googletest/
-[Issues]: https://github.com/mrtazz/restclient-cpp/issues
-[Tracker]: https://www.pivotaltracker.com/projects/255177/stories
 [packagecloud]: https://packagecloud.io/mrtazz/restclient-cpp

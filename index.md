@@ -18,7 +18,7 @@ I tried to keep usage close to the [ruby rest-client][]. So the basic usage is:
 Examples:
 
 {% highlight c++ %}
-#include "restclient.h"
+#include "restclient-cpp/restclient.h"
 
 RestClient::response r = RestClient::get("http://url.com")
 
@@ -43,7 +43,6 @@ RestClient::response.headers // HTTP response headers
 
 ## Dependencies
 - [libcurl][]
-- [gtest][] for development
 
 ## Installation
 There are some packages available for Linux on [packagecloud][packagecloud].
@@ -57,8 +56,15 @@ make install
 
 {% endhighlight %}
 
+## Contribute
+All contributions are highly appreciated. This includes filing issues,
+updating documentation and writing code. Please take a look at the
+[contributing guidelines][contributing] before so your contribution can be
+merged as fast as possible.
+
 
 [libcurl]: http://curl.haxx.se/libcurl/
 [ruby rest-client]: http://github.com/archiloque/rest-client
 [gtest]: http://code.google.com/p/googletest/
 [packagecloud]: https://packagecloud.io/mrtazz/restclient-cpp
+[contributing]: https://github.com/mrtazz/restclient-cpp/blob/master/CONTRIBUTING.md

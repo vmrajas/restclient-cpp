@@ -2,8 +2,10 @@
 layout: project
 title: restclient-cpp
 ---
-
-# REST client for C++ [![Build Status](https://travis-ci.org/mrtazz/restclient-cpp.svg?branch=master)](https://travis-ci.org/mrtazz/restclient-cpp)
+# REST client for C++
+[![Build Status](https://travis-ci.org/mrtazz/restclient-cpp.svg?branch=master)](https://travis-ci.org/mrtazz/restclient-cpp)
+[![Coverage Status](https://coveralls.io/repos/mrtazz/restclient-cpp/badge.svg?branch=master&service=github)](https://coveralls.io/github/mrtazz/restclient-cpp?branch=master)
+[![Packagecloud](https://img.shields.io/badge/packagecloud-available-green.svg)](https://packagecloud.io/mrtazz/restclient-cpp)
 
 ## About
 This is a simple REST client for C++. It wraps libcurl for HTTP requests.
@@ -11,35 +13,40 @@ This is a simple REST client for C++. It wraps libcurl for HTTP requests.
 ## Usage
 I tried to keep usage close to the [ruby rest-client][]. So the basic usage is:
 
-{% highlight c++ %}
-    RestClient::method(url, content-type, params);
-{% endhighlight %}
+```cpp
+RestClient::method(url, content-type, params);
+// or
+RestClient::method(url, content-type, params, headers);
+```
 
 Examples:
 
-{% highlight c++ %}
+```cpp
 #include "restclient-cpp/restclient.h"
 
 RestClient::response r = RestClient::get("http://url.com")
-
-RestClient::response r = RestClient::post("http://url.com/post", "text/json",
-                                          "{"foo": "bla"}")
-
-RestClient::response r = RestClient::put("http://url.com/put", "text/json",
-                                         "{"foo": "bla"}")
-
+RestClient::response r = RestClient::post("http://url.com/post", "text/json", "{\"foo\": \"bla\"}")
+RestClient::response r = RestClient::put("http://url.com/put", "text/json", "{\"foo\": \"bla\"}")
 RestClient::response r = RestClient::del("http://url.com/delete")
 
-{% endhighlight %}
+// add some headers
+
+RestClient::headermap headers;
+headers["Accept"] = "application/json";
+
+RestClient::response r = RestClient::get("http://url.com", headers)
+RestClient::response r = RestClient::post("http://url.com/post", "text/json", "{\"foo\": \"bla\"}", headers)
+RestClient::response r = RestClient::put("http://url.com/put", "text/json", "{\"foo\": \"bla\"}", headers)
+RestClient::response r = RestClient::del("http://url.com/delete", headers)
+```
 
 The response is of type RestClient::response and has three attributes:
 
-{% highlight c++ %}
+```cpp
 RestClient::response.code // HTTP response code
 RestClient::response.body // HTTP response body
 RestClient::response.headers // HTTP response headers
-{% endhighlight %}
-
+```
 
 ## Dependencies
 - [libcurl][]
@@ -48,13 +55,11 @@ RestClient::response.headers // HTTP response headers
 There are some packages available for Linux on [packagecloud][packagecloud].
 Otherwise you can do the regular autotools dance:
 
-{% highlight bash %}
-
+```bash
 ./autogen.sh
 ./configure
 make install
-
-{% endhighlight %}
+```
 
 ## Contribute
 All contributions are highly appreciated. This includes filing issues,

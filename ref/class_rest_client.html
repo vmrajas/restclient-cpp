@@ -90,7 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1response.html">response</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents the HTTP response data.  <a href="struct_rest_client_1_1response.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1upload__object.html">upload_object</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents the payload to upload on POST requests.  <a href="struct_rest_client_1_1upload__object.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
@@ -98,8 +100,9 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_client.html#a140e9dd071b28bbc49997b00c116b4c5">clearAuth</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7569571a0dd37ddb03fbc20ac6b81bd9"></a><!-- doxytag: member="RestClient::setAuth" ref="a7569571a0dd37ddb03fbc20ac6b81bd9" args="(const std::string &amp;user, const std::string &amp;password)" -->
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (const std::string &amp;user, const std::string &amp;password)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">method to clear auth set on the static class  <a href="#a140e9dd071b28bbc49997b00c116b4c5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_client.html#a7569571a0dd37ddb03fbc20ac6b81bd9">setAuth</a> (const std::string &amp;user, const std::string &amp;password)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">method to set basic auth data on the class  <a href="#a7569571a0dd37ddb03fbc20ac6b81bd9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_rest_client_1_1response.html">response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_client.html#af1968a43b13ac6ccf2a144984333b55b">get</a> (const std::string &amp;url, const size_t timeout=0)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP GET method.  <a href="#af1968a43b13ac6ccf2a144984333b55b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_rest_client_1_1response.html">response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_client.html#a028e1001e31f98cc67e60b6daa3bc119">get</a> (const std::string &amp;url, const <a class="el" href="class_rest_client.html#a9c45a29659c420455f7c98320432081b">headermap</a> &amp;headers, const size_t timeout=0)</td></tr>
@@ -146,8 +149,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
       </table>
 </div>
 <div class="memdoc">
+
+<p>method to clear auth set on the static class </p>
 <p>public methods</p>
-<p>Authentication Methods implementation </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -179,7 +184,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
 <p>HTTP DELETE method. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">url</td><td>to query</td></tr>
+    <tr><td class="paramname">url</td><td>to query </td></tr>
+    <tr><td class="paramname">timeout</td><td>in seconds for this request</td></tr>
   </table>
   </dd>
 </dl>
@@ -222,7 +228,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">url</td><td>to query </td></tr>
-    <tr><td class="paramname">headers</td><td>HTTP headers</td></tr>
+    <tr><td class="paramname">headers</td><td>HTTP headers </td></tr>
+    <tr><td class="paramname">timeout</td><td>in seconds for this request</td></tr>
   </table>
   </dd>
 </dl>
@@ -270,7 +277,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
 <p>HTTP GET method. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">url</td><td>to query</td></tr>
+    <tr><td class="paramname">url</td><td>to query </td></tr>
+    <tr><td class="paramname">timeout</td><td>in seconds for this request</td></tr>
   </table>
   </dd>
 </dl>
@@ -313,7 +321,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">url</td><td>to query </td></tr>
-    <tr><td class="paramname">headers</td><td>HTTP headers</td></tr>
+    <tr><td class="paramname">headers</td><td>HTTP headers </td></tr>
+    <tr><td class="paramname">timeout</td><td>in seconds for this request</td></tr>
   </table>
   </dd>
 </dl>
@@ -373,7 +382,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
   <table class="params">
     <tr><td class="paramname">url</td><td>to query </td></tr>
     <tr><td class="paramname">ctype</td><td>content type as string </td></tr>
-    <tr><td class="paramname">data</td><td>HTTP POST body</td></tr>
+    <tr><td class="paramname">data</td><td>HTTP POST body </td></tr>
+    <tr><td class="paramname">timeout</td><td>in seconds for this request</td></tr>
   </table>
   </dd>
 </dl>
@@ -430,7 +440,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
     <tr><td class="paramname">url</td><td>to query </td></tr>
     <tr><td class="paramname">ctype</td><td>content type as string </td></tr>
     <tr><td class="paramname">data</td><td>HTTP POST body </td></tr>
-    <tr><td class="paramname">headers</td><td>HTTP headers</td></tr>
+    <tr><td class="paramname">headers</td><td>HTTP headers </td></tr>
+    <tr><td class="paramname">timeout</td><td>in seconds for this request</td></tr>
   </table>
   </dd>
 </dl>
@@ -493,7 +504,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
   <table class="params">
     <tr><td class="paramname">url</td><td>to query </td></tr>
     <tr><td class="paramname">ctype</td><td>content type as string </td></tr>
-    <tr><td class="paramname">data</td><td>HTTP PUT body</td></tr>
+    <tr><td class="paramname">data</td><td>HTTP PUT body </td></tr>
+    <tr><td class="paramname">timeout</td><td>in seconds for this request</td></tr>
   </table>
   </dd>
 </dl>
@@ -550,7 +562,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
     <tr><td class="paramname">url</td><td>to query </td></tr>
     <tr><td class="paramname">ctype</td><td>content type as string </td></tr>
     <tr><td class="paramname">data</td><td>HTTP PUT body </td></tr>
-    <tr><td class="paramname">headers</td><td>HTTP headers</td></tr>
+    <tr><td class="paramname">headers</td><td>HTTP headers </td></tr>
+    <tr><td class="paramname">timeout</td><td>in seconds for this request</td></tr>
   </table>
   </dd>
 </dl>
@@ -574,6 +587,43 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
 
 </div>
 </div>
+<a class="anchor" id="a7569571a0dd37ddb03fbc20ac6b81bd9"></a><!-- doxytag: member="RestClient::setAuth" ref="a7569571a0dd37ddb03fbc20ac6b81bd9" args="(const std::string &amp;user, const std::string &amp;password)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_rest_client.html#a7569571a0dd37ddb03fbc20ac6b81bd9">RestClient::setAuth</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>method to set basic auth data on the class </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>- user name to use for basic auth </td></tr>
+    <tr><td class="paramname">password</td><td>- password to use for basic auth</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>void </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/restclient-cpp/<a class="el" href="restclient_8h_source.html">restclient.h</a></li>
 <li>source/<a class="el" href="restclient_8cpp.html">restclient.cpp</a></li>
@@ -584,7 +634,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -596,7 +646,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAuth</b> (c
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 23 2015 23:52:08 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 26 2015 22:48:18 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

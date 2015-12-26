@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -103,20 +103,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="RestClient::upload_object" -->
+<p>This structure represents the payload to upload on POST requests.  
+ <a href="struct_rest_client_1_1upload__object.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="restclient_8h_source.html">restclient.h</a>&gt;</code></p>
 
 <p><a href="struct_rest_client_1_1upload__object-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa42905a86f65da273c7c3d3fe60f6b0a"></a><!-- doxytag: member="RestClient::upload_object::data" ref="aa42905a86f65da273c7c3d3fe60f6b0a" args="" -->
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7665f5103712bd0e7ed0a12b2f9e1802"></a><!-- doxytag: member="RestClient::upload_object::length" ref="a7665f5103712bd0e7ed0a12b2f9e1802" args="" -->
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>length</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1upload__object.html#a09fe54104473484fb9262f97c40d69d5">data</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1upload__object.html#a18cb250b61e64b6d1e669f60646a8baa">length</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>struct used for uploading data </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>This structure represents the payload to upload on POST requests. </p>
+</div><hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a09fe54104473484fb9262f97c40d69d5"></a><!-- doxytag: member="RestClient::upload_object::data" ref="a09fe54104473484fb9262f97c40d69d5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rest_client_1_1upload__object.html#a09fe54104473484fb9262f97c40d69d5">RestClient::upload_object::data</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Member 'data' contains the data to upload </p>
+
+</div>
+</div>
+<a class="anchor" id="a18cb250b61e64b6d1e669f60646a8baa"></a><!-- doxytag: member="RestClient::upload_object::length" ref="a18cb250b61e64b6d1e669f60646a8baa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rest_client_1_1upload__object.html#a18cb250b61e64b6d1e669f60646a8baa">RestClient::upload_object::length</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Member 'length' contains the length of the data to upload </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/restclient-cpp/<a class="el" href="restclient_8h_source.html">restclient.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -125,7 +155,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>length</b></td></tr
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,7 +167,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>length</b></td></tr
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 23 2015 23:52:08 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 26 2015 22:48:18 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

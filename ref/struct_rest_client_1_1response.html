@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -103,22 +103,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="RestClient::response" -->
+<p>This structure represents the HTTP response data.  
+ <a href="struct_rest_client_1_1response.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="restclient_8h_source.html">restclient.h</a>&gt;</code></p>
 
 <p><a href="struct_rest_client_1_1response-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f76354c53d1be65028790b7c1d547e4"></a><!-- doxytag: member="RestClient::response::code" ref="a3f76354c53d1be65028790b7c1d547e4" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>code</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9ecced97aa319dc341057fa979313a7"></a><!-- doxytag: member="RestClient::response::body" ref="ab9ecced97aa319dc341057fa979313a7" args="" -->
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>body</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afad351f5715632a6e09fc5a330318448"></a><!-- doxytag: member="RestClient::response::headers" ref="afad351f5715632a6e09fc5a330318448" args="" -->
-<a class="el" href="class_rest_client.html#a9c45a29659c420455f7c98320432081b">headermap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>headers</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1response.html#a9539039581fcc5313ee29cd2098995e6">code</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1response.html#a5451915436b5aeb297397db0b4d06f71">body</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_client.html#a9c45a29659c420455f7c98320432081b">headermap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1response.html#a017a61a8aaa23e42127ad398c10dc297">headers</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>response struct for queries </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>This structure represents the HTTP response data. </p>
+</div><hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a5451915436b5aeb297397db0b4d06f71"></a><!-- doxytag: member="RestClient::response::body" ref="a5451915436b5aeb297397db0b4d06f71" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rest_client_1_1response.html#a5451915436b5aeb297397db0b4d06f71">RestClient::response::body</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Member 'body' contains the HTTP response body </p>
+
+</div>
+</div>
+<a class="anchor" id="a9539039581fcc5313ee29cd2098995e6"></a><!-- doxytag: member="RestClient::response::code" ref="a9539039581fcc5313ee29cd2098995e6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rest_client_1_1response.html#a9539039581fcc5313ee29cd2098995e6">RestClient::response::code</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Member 'code' contains the HTTP response code </p>
+
+</div>
+</div>
+<a class="anchor" id="a017a61a8aaa23e42127ad398c10dc297"></a><!-- doxytag: member="RestClient::response::headers" ref="a017a61a8aaa23e42127ad398c10dc297" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rest_client_1_1response.html#a017a61a8aaa23e42127ad398c10dc297">RestClient::response::headers</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Member 'headers' contains the HTTP response headers </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/restclient-cpp/<a class="el" href="restclient_8h_source.html">restclient.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -127,7 +170,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>body</b></td><
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -139,7 +182,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>body</b></td><
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 23 2015 23:52:08 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 26 2015 22:48:18 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

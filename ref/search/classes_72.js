@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['response',['response',['../struct_rest_client_1_1response.html',1,'RestClient']]],
-  ['restclient',['RestClient',['../class_rest_client.html',1,'']]]
+  ['requestinfo',['RequestInfo',['../struct_rest_client_1_1_connection_1_1_request_info.html',1,'RestClient::Connection']]],
+  ['response',['Response',['../struct_rest_client_1_1_response.html',1,'RestClient']]]
 ];

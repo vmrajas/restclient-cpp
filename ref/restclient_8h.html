@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -75,7 +76,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">include/restclient-cpp/restclient.h File Reference</div>  </div>
 </div><!--header-->
@@ -83,21 +87,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>libcurl wrapper for REST calls  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;string&gt;</code><br/>
+<div class="textblock"><code>#include &lt;curl/curl.h&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;map&gt;</code><br/>
 <code>#include &lt;cstdlib&gt;</code><br/>
-<code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &quot;restclient-cpp/version.h&quot;</code><br/>
 </div>
 <p><a href="restclient_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_client.html">RestClient</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1response.html">RestClient::response</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents the HTTP response data.  <a href="struct_rest_client_1_1response.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1upload__object.html">RestClient::upload_object</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents the payload to upload on POST requests.  <a href="struct_rest_client_1_1upload__object.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rest_client_1_1_response.html">RestClient::Response</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents the HTTP response data.  <a href="struct_rest_client_1_1_response.html#details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_rest_client.html">RestClient</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>namespace for all <a class="el" href="namespace_rest_client.html" title="namespace for all RestClient definitions">RestClient</a> definitions </p>
+<br/></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_rest_client.html#ab2bbc7fd5ec10171e4e1fb2d7fc8e865">RestClient::HeaderFields</a></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38395626a68f2dc66e2acf5b01f5b70b"></a><!-- doxytag: member="restclient.h::init" ref="a38395626a68f2dc66e2acf5b01f5b70b" args="()" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_rest_client.html#a38395626a68f2dc66e2acf5b01f5b70b">RestClient::init</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">global init function. Call this before you start any threads. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4dc1337561e6622b013d22639d3d26c"></a><!-- doxytag: member="restclient.h::disable" ref="aa4dc1337561e6622b013d22639d3d26c" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_rest_client.html#aa4dc1337561e6622b013d22639d3d26c">RestClient::disable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">global disable function. Call this before you terminate your program. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_rest_client.html#a4b542b597eb854401c02520af258006f">RestClient::get</a> (const std::string &amp;url)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP GET method.  <a href="#a4b542b597eb854401c02520af258006f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_rest_client.html#a7de7aa2d333b6e7c5f2c2726d4e5485e">RestClient::post</a> (const std::string &amp;url, const std::string &amp;content_type, const std::string &amp;data)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP POST method.  <a href="#a7de7aa2d333b6e7c5f2c2726d4e5485e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_rest_client.html#ac180f6320d47cad592399378f8c45f7a">RestClient::put</a> (const std::string &amp;url, const std::string &amp;content_type, const std::string &amp;data)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP PUT method.  <a href="#ac180f6320d47cad592399378f8c45f7a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_rest_client.html#a52975c3a96fe5f90b40adc74faae8f94">RestClient::del</a> (const std::string &amp;url)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP DELETE method.  <a href="#a52975c3a96fe5f90b40adc74faae8f94"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>libcurl wrapper for REST calls </p>
@@ -110,7 +136,7 @@ Classes</h2></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,7 +148,7 @@ Classes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 12 2016 19:11:45 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 2 2016 12:17:54 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

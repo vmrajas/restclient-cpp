@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['post',['post',['../class_rest_client.html#a922238611513a3757ac7fa3cf34da73d',1,'RestClient::post(const std::string &amp;url, const std::string &amp;ctype, const std::string &amp;data, const size_t timeout=0)'],['../class_rest_client.html#a5a37ecf0949e95f7c06e6d73b85921ea',1,'RestClient::post(const std::string &amp;url, const std::string &amp;ctype, const std::string &amp;data, const headermap &amp;headers, const size_t timeout=0)']]],
-  ['put',['put',['../class_rest_client.html#a23af385837f9b57313b4c73267af5ee3',1,'RestClient::put(const std::string &amp;url, const std::string &amp;ctype, const std::string &amp;data, const size_t timeout=0)'],['../class_rest_client.html#afd49417366fcb056b8948587eeebcd5b',1,'RestClient::put(const std::string &amp;url, const std::string &amp;ctype, const std::string &amp;data, const headermap &amp;headers, const size_t timeout=0)']]]
+  ['post',['post',['../class_rest_client_1_1_connection.html#a76b11e6e01fb84cafdacf99e49aae6a7',1,'RestClient::Connection::post()'],['../namespace_rest_client.html#a7de7aa2d333b6e7c5f2c2726d4e5485e',1,'RestClient::post()']]],
+  ['put',['put',['../class_rest_client_1_1_connection.html#af1a30c5aa6a646e6bad4caf2abb7084c',1,'RestClient::Connection::put()'],['../namespace_rest_client.html#ac180f6320d47cad592399378f8c45f7a',1,'RestClient::put()']]]
 ];

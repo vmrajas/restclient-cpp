@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data',['data',['../struct_rest_client_1_1upload__object.html#a09fe54104473484fb9262f97c40d69d5',1,'RestClient::upload_object']]]
+  ['data',['data',['../struct_rest_client_1_1_helpers_1_1_upload_object.html#a0f0bebacc6bb930899ee9babadb92a31',1,'RestClient::Helpers::UploadObject']]]
 ];

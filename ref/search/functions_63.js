@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clearauth',['clearAuth',['../class_rest_client.html#a140e9dd071b28bbc49997b00c116b4c5',1,'RestClient']]]
+  ['connection',['Connection',['../class_rest_client_1_1_connection.html#a42f991cc28f62deb120b96a50534884e',1,'RestClient::Connection']]]
 ];

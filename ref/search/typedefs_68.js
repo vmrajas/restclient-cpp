@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['headermap',['headermap',['../class_rest_client.html#a9c45a29659c420455f7c98320432081b',1,'RestClient']]]
+  ['headerfields',['HeaderFields',['../namespace_rest_client.html#ab2bbc7fd5ec10171e4e1fb2d7fc8e865',1,'RestClient']]]
 ];

@@ -130,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">configure whether to follow redirects on this connection  <a href="#a77c9d405950492f9bcec21ce79edd2b3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_client_1_1_connection.html#a3e510fdf8291e9e277df72b0fae0a111">SetUserAgent</a> (const std::string &amp;userAgent)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set custom user agent for connection. This gets prepended to the default restclient-cpp/RESTCLIENT_VERSION string  <a href="#a3e510fdf8291e9e277df72b0fae0a111"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_client_1_1_connection.html#afd74a344a00b58fc6997e34c37dde834">SetCAInfoFilePath</a> (const std::string &amp;caInfoFilePath)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set custom Certificate Authority (CA) path  <a href="#afd74a344a00b58fc6997e34c37dde834"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_client_1_1_connection.html#aa4353eb1df932b254aa02446f4ac3b32">GetUserAgent</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get the user agent to add to the request  <a href="#aa4353eb1df932b254aa02446f4ac3b32"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rest_client_1_1_connection_1_1_info.html">RestClient::Connection::Info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_client_1_1_connection.html#ac489a801edc621a384cdfb29e7071231">GetInfo</a> ()</td></tr>
@@ -467,6 +469,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="afd74a344a00b58fc6997e34c37dde834"></a><!-- doxytag: member="RestClient::Connection::SetCAInfoFilePath" ref="afd74a344a00b58fc6997e34c37dde834" args="(const std::string &amp;caInfoFilePath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_rest_client_1_1_connection.html#afd74a344a00b58fc6997e34c37dde834">RestClient::Connection::SetCAInfoFilePath</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>caInfoFilePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set custom Certificate Authority (CA) path </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">caInfoFilePath</td><td>- The path to a file holding the certificates used to verify the peer with. See CURLOPT_CAINFO </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a6af41bf467a80deb83f20044f2c17344"></a><!-- doxytag: member="RestClient::Connection::SetHeaders" ref="a6af41bf467a80deb83f20044f2c17344" args="(RestClient::HeaderFields headers)" -->
 <div class="memitem">
 <div class="memproto">
@@ -564,7 +591,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 20 2016 02:07:23 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 20 2016 16:37:38 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

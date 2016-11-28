@@ -163,25 +163,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00148"></a>00148     <a class="code" href="struct_rest_client_1_1_response.html" title="This structure represents the HTTP response data.">RestClient::Response</a> <a class="code" href="class_rest_client_1_1_connection.html#af1a30c5aa6a646e6bad4caf2abb7084c" title="HTTP PUT method.">put</a>(<span class="keyword">const</span> std::string&amp; uri,
 <a name="l00149"></a>00149                              <span class="keyword">const</span> std::string&amp; data);
 <a name="l00150"></a>00150     <a class="code" href="struct_rest_client_1_1_response.html" title="This structure represents the HTTP response data.">RestClient::Response</a> <a class="code" href="class_rest_client_1_1_connection.html#a4a14035f66375a7291f9d16d87db41f2" title="HTTP DELETE method.">del</a>(<span class="keyword">const</span> std::string&amp; uri);
-<a name="l00151"></a>00151 
-<a name="l00152"></a>00152  <span class="keyword">private</span>:
-<a name="l00153"></a>00153     CURL* curlHandle;
-<a name="l00154"></a>00154     std::string baseUrl;
-<a name="l00155"></a>00155     <a class="code" href="namespace_rest_client.html#ab2bbc7fd5ec10171e4e1fb2d7fc8e865">RestClient::HeaderFields</a> headerFields;
-<a name="l00156"></a>00156     <span class="keywordtype">int</span> timeout;
-<a name="l00157"></a>00157     <span class="keywordtype">bool</span> followRedirects;
-<a name="l00158"></a>00158     <span class="keyword">struct </span>{
-<a name="l00159"></a>00159       std::string username;
-<a name="l00160"></a>00160       std::string password;
-<a name="l00161"></a>00161     } basicAuth;
-<a name="l00162"></a>00162     std::string customUserAgent;
-<a name="l00163"></a>00163     std::string caInfoFilePath;
-<a name="l00164"></a>00164     RequestInfo lastRequest;
-<a name="l00165"></a>00165     <a class="code" href="struct_rest_client_1_1_response.html" title="This structure represents the HTTP response data.">RestClient::Response</a> performCurlRequest(<span class="keyword">const</span> std::string&amp; uri);
-<a name="l00166"></a>00166 };
-<a name="l00167"></a>00167 };  <span class="comment">// namespace RestClient</span>
-<a name="l00168"></a>00168 
-<a name="l00169"></a>00169 <span class="preprocessor">#endif  // INCLUDE_RESTCLIENT_CPP_CONNECTION_H_</span>
+<a name="l00151"></a>00151     <a class="code" href="struct_rest_client_1_1_response.html" title="This structure represents the HTTP response data.">RestClient::Response</a> <a class="code" href="class_rest_client_1_1_connection.html#a64f085227c8c4d47dc6c84fea4f71398" title="HTTP HEAD method.">head</a>(<span class="keyword">const</span> std::string&amp; uri);
+<a name="l00152"></a>00152 
+<a name="l00153"></a>00153  <span class="keyword">private</span>:
+<a name="l00154"></a>00154     CURL* curlHandle;
+<a name="l00155"></a>00155     std::string baseUrl;
+<a name="l00156"></a>00156     <a class="code" href="namespace_rest_client.html#ab2bbc7fd5ec10171e4e1fb2d7fc8e865">RestClient::HeaderFields</a> headerFields;
+<a name="l00157"></a>00157     <span class="keywordtype">int</span> timeout;
+<a name="l00158"></a>00158     <span class="keywordtype">bool</span> followRedirects;
+<a name="l00159"></a>00159     <span class="keyword">struct </span>{
+<a name="l00160"></a>00160       std::string username;
+<a name="l00161"></a>00161       std::string password;
+<a name="l00162"></a>00162     } basicAuth;
+<a name="l00163"></a>00163     std::string customUserAgent;
+<a name="l00164"></a>00164     std::string caInfoFilePath;
+<a name="l00165"></a>00165     RequestInfo lastRequest;
+<a name="l00166"></a>00166     <a class="code" href="struct_rest_client_1_1_response.html" title="This structure represents the HTTP response data.">RestClient::Response</a> performCurlRequest(<span class="keyword">const</span> std::string&amp; uri);
+<a name="l00167"></a>00167 };
+<a name="l00168"></a>00168 };  <span class="comment">// namespace RestClient</span>
+<a name="l00169"></a>00169 
+<a name="l00170"></a>00170 <span class="preprocessor">#endif  // INCLUDE_RESTCLIENT_CPP_CONNECTION_H_</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -200,7 +201,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 26 2016 12:05:26 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 28 2016 01:30:38 for restclient-cpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

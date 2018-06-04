@@ -35,7 +35,7 @@ RestClient::Connection::Connection(const std::string& baseUrl)
   this->timeout = 0;
   this->followRedirects = false;
   this->noSignal = false;
-  this->unsetVerifyCertificate = false; 
+  this->allowInsecure = false; 
 }
 
 RestClient::Connection::~Connection() {
@@ -70,7 +70,7 @@ RestClient::Connection::GetInfo() {
   ret.keyPassword = this->keyPassword;
 
   ret.uriProxy = this->uriProxy;
-  ret.unsetVerifyCertificate = this->unsetVerifyCertificate;
+  ret.allowInsecure = this->allowInsecure;
 
   return ret;
 }
@@ -264,12 +264,12 @@ RestClient::Connection::SetProxy(const std::string& uriProxy) {
 }
 
 /**
- *@brief. Call this function to make it non compulsory to verify certificate 
- *of the server.
+ *@brief. Call this function with boolean value to set the variable 
+ *allowInsecure 
  */
 void 
-RestClient::Connection::UnsetVerifyCertificate() {
-  this->unsetVerifyCertificate = true;
+RestClient::Connection::SetAllowInsecure(bool allowInsecure) {
+  this->allowInsecure = allowInsecure;
 }
 
 /**
@@ -380,7 +380,7 @@ RestClient::Connection::performCurlRequest(const std::string& uri) {
     curl_easy_setopt(this->curlHandle, CURLOPT_HTTPPROXYTUNNEL,
                      1L);
   }
-  if (!this->unsetVerifyCertificate) {
+  if (this->allowInsecure) {
     curl_easy_setopt(this->curlHandle, CURLOPT_SSL_VERIFYHOST, false);
     curl_easy_setopt(this->curlHandle, CURLOPT_SSL_VERIFYPEER, false);
   }

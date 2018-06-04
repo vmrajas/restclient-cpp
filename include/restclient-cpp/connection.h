@@ -97,6 +97,9 @@ class Connection {
       *  Member 'customUserAgent' contains the custom user agent
       *  @var Info::uriProxy
       *  Member 'uriProxy' contains the HTTP proxy address
+      *  @var Info::unsetVerifyCertificate
+      *  Member 'unsetVerifyCertificate' contains boolean to unset 
+      *  verification of certificate. default value is false
       *  @var Info::lastRequest
       *  Member 'lastRequest' contains metrics about the last request
       */
@@ -117,6 +120,7 @@ class Connection {
       std::string keyPassword;
       std::string customUserAgent;
       std::string uriProxy;
+      bool unsetVerifyCertificate;
       RequestInfo lastRequest;
     } Info;
 
@@ -161,6 +165,9 @@ class Connection {
     // set CURLOPT_PROXY
     void SetProxy(const std::string& uriProxy);
 
+    // unset verifycertificate. Make it non compulsory to verify certificate
+    void UnsetVerifyCertificate();
+
     std::string GetUserAgent();
 
     RestClient::Connection::Info GetInfo();
@@ -204,6 +211,7 @@ class Connection {
     std::string keyPath;
     std::string keyPassword;
     std::string uriProxy;
+    bool unsetVerifyCertificate;
     RestClient::Response performCurlRequest(const std::string& uri);
 };
 };  // namespace RestClient

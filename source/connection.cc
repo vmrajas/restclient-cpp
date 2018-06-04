@@ -35,6 +35,7 @@ RestClient::Connection::Connection(const std::string& baseUrl)
   this->timeout = 0;
   this->followRedirects = false;
   this->noSignal = false;
+  this->unsetVerifyCertificate = false; 
 }
 
 RestClient::Connection::~Connection() {
@@ -69,6 +70,7 @@ RestClient::Connection::GetInfo() {
   ret.keyPassword = this->keyPassword;
 
   ret.uriProxy = this->uriProxy;
+  ret.unsetVerifyCertificate = this->unsetVerifyCertificate;
 
   return ret;
 }
@@ -262,6 +264,15 @@ RestClient::Connection::SetProxy(const std::string& uriProxy) {
 }
 
 /**
+ *@brief. Call this function to make it non compulsory to verify certificate 
+ *of the server.
+ */
+void 
+RestClient::Connection::UnsetVerifyCertificate() {
+  this->unsetVerifyCertificate = true;
+}
+
+/**
  * @brief helper function to get called from the actual request methods to
  * prepare the curlHandle for transfer with generic options, perform the
  * request and record some stats from the last request and then reset the
@@ -368,6 +379,10 @@ RestClient::Connection::performCurlRequest(const std::string& uri) {
                      uriProxy.c_str());
     curl_easy_setopt(this->curlHandle, CURLOPT_HTTPPROXYTUNNEL,
                      1L);
+  }
+  if (!this->unsetVerifyCertificate) {
+    curl_easy_setopt(this->curlHandle, CURLOPT_SSL_VERIFYHOST, false);
+    curl_easy_setopt(this->curlHandle, CURLOPT_SSL_VERIFYPEER, false);
   }
 
   res = curl_easy_perform(this->curlHandle);
